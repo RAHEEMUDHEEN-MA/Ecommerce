@@ -57,6 +57,9 @@ const NavBar = () => {
               </option>
             ))}
           </select>
+          <Link className="links" to="/users">
+            Users
+          </Link>
         </div>
       </div>
       <ul className="nav-menu"></ul>
