@@ -5,14 +5,24 @@
   flex-direction: row;
  gap: 10px;
   padding: 10px 100px;
+  overflow: hidden;
 }
 
 .home-left-container {
-    display: flex;
-    background-size: cover;
-    border-radius: 5px;
-    width: 70%;
-    animation: changeBackground 13s infinite; /* Set the animation to change every 4 seconds */
+  display: flex;
+  background-size: cover;
+  border-radius: 5px;
+  width: 70%;
+  animation: changeBackground 13s infinite, slideUp 0.6s ease-in-out; 
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%); /* Start from bottom */
+  }
+  100% {
+    transform: translateY(0); /* Slide to top */
+  }
 }
 
 @keyframes changeBackground {
@@ -55,6 +65,7 @@
     border-radius: 20px;
 }
 .home-right-container {
+
   display: flex;
   width: 30%;
   flex-direction: column;
@@ -72,7 +83,17 @@
     height: 50%;
   background-size: cover;
   border-radius: 5px;
+  animation:  slidedown 0.7s ease-in-out; 
  
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(-100%); /* Start from bottom */
+  }
+  100% {
+    transform: translateY(0); /* Slide to top */
+  }
 }
 .home-right-container  .new{
     
@@ -92,6 +113,7 @@
 
   }
 .right-bottom-conatiner {
+  animation:  slideUp 1s ease-in-out; 
     padding: 30px;
   display: flex;
   height: 50%;

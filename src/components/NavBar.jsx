@@ -11,7 +11,7 @@ import { ShopContext } from "../ShopContext";
 const NavBar = () => {
   const { getTotalCartItems } = useContext(ShopContext);
   const [categories, setcategories] = useState([]);
-  // console.log(categories);
+  
 
   useEffect(() => {
     axios
