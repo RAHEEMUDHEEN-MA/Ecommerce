@@ -130,7 +130,9 @@ select{
         height: 70px;
     }
     #userss{
-        display: none;
+        /* display: none; */
+
+        width: 10px;
     }
     #homebtn{
         display: none;
