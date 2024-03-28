@@ -12,13 +12,9 @@ const ProductTile = ({ image, title, id ,price}) => {
   };
  
   const handleAddcart=()=>{
-    addToCart(id,3)
+    addToCart(id,1)
   }
-  // function handleImageError(event) {
-  //   event.target.src = 'fallback_image_url.jpg'; // Replace with your fallback image URL
-  //   event.target.alt = 'https://images.app.goo.gl/h4wbdKdJSuoieDQP8'; // Replace with a description of the fallback image
-  // }
-  
+ 
 
   return (
     <div className="product-tile" >

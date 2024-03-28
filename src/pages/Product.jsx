@@ -17,7 +17,7 @@ const Product = () => {
     
     const handleAddCart=()=>{
       alert("adding to cart")
-      addToCart(product_id,2)
+      addToCart(product_id,1)
     }
 
   return (
