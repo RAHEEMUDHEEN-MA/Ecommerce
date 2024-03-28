@@ -7,3 +7,21 @@
     justify-items: center; /* Center tiles horizontally */
   }
   
+  .catHead{
+    width: 87%;
+    background-color: rgba(128, 128, 128, 0.164);
+    display: flex;
+    gap: 20px;
+    padding:0px 100px ;
+    color: gray;
+
+  }
+  .catHead div{
+   width: 4px;
+   background-color: rgba(0, 0, 0, 0.114);
+   margin: 4px -5px; 
+
+  }
+  .catHead p{
+   text-transform: uppercase;
+  }

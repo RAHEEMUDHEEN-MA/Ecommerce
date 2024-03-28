@@ -13,6 +13,7 @@
 .product-tile img {
   height: 60%;
   width: 250px;
+  object-fit: cover;
 }
 #product_title {
   height: 13%;

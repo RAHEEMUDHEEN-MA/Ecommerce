@@ -25,7 +25,7 @@ const Home = () => {
         <div className="home-left-container">
           <div  >
             {" "}
-            <p className="new">NEW REALEASED</p>
+            <p className="new">NEW ARRIVALS</p>
             <p className="name">
               Sleek Modern <br /> Laptop for <br /> Professionals
              </p>
@@ -38,7 +38,7 @@ const Home = () => {
         <div className="home-right-container">
           <div className="right-top-conatiner"><div>
             {" "} 
-            <p className="new">NEW REALEASED</p>
+            <p className="new">NEW NEW ARRIVALS</p>
             <p className="name">
             Vibrant Runner <br /> Sneakers <br />for Comfort
             </p>
@@ -49,7 +49,7 @@ const Home = () => {
           </div></div>
           <div className="right-bottom-conatiner"> <div>
             {" "}
-            <p className="new">NEW REALEASED</p>
+            <p className="new">NEW NEW ARRIVALS</p>
             <p className="name">
             Modern Ergonomic  <br /> Office Chair  <br /> 
             </p>

@@ -6,7 +6,7 @@
 .details-container{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
 }
 .catname{
     text-transform: uppercase;
@@ -36,6 +36,9 @@
     font-size: 18px;
     margin-top: 50px;
     margin-left: 150px;
+}
+#cartbtn:hover{
+  cursor: pointer;
 }
 .min_img{
     display: flex;

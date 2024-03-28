@@ -24,10 +24,13 @@ const ShopContextProvider = (props) => {
     //   console.log("cartproduct",cartProduct);
       cartProduct.quantity = quantity;
       setcartItems([...cartItems, cartProduct]);
+      window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const removeFromCart = (itemId) => {
     setcartItems(cartItems.filter((product) => product.id !== itemId));
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
   };
 
   const getTotalCartAmount = () => {

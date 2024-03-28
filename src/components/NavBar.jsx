@@ -4,9 +4,12 @@ import axios from "axios";
 // import { useHistory} from "react-router-dom";
 import logo from "../assests/images/shopLogo.png";
 import cart from "../assests/images/image.png";
-import {} from "../assests/styles/NavBar.css";
+import "../assests/styles/NavBar.css";
+import { useContext } from "react";
+import { ShopContext } from "../ShopContext";
 
 const NavBar = () => {
+  const { getTotalCartItems } = useContext(ShopContext);
   const [categories, setcategories] = useState([]);
   // console.log(categories);
 
@@ -41,25 +44,29 @@ const NavBar = () => {
           />
           <p>ShoPY</p>
         </Link>
-      </div>
-      <ul className="nav-menu">
-        <Link to="/">Home</Link>
-        <select defaultValue="" onChange={handleChange}>
-        <option >Category</option>
+        <div className="links-holder">
+          <Link className="links" to="/">
+            Home
+          </Link>
+          <select className="links" defaultValue="" onChange={handleChange}>
+            <option>Category</option>
 
-         {categories.map((item)=>(
-            <option key={item.id} value={item.id}>{item.name}</option>
-         ))}
-         
-        </select>
-      </ul>
+            {categories.map((item) => (
+              <option key={item.id} value={item.id}>
+                {item.name}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <ul className="nav-menu"></ul>
       <div className="nav-login-cart">
         {/* <Link to='/login'><button className='log_btn'>Login</button></Link> */}
+
         <Link to="/cart">
+          <div className="nav-cart-count">{getTotalCartItems()}</div>
           <img src={cart} alt="" className="cart" />
         </Link>
-        
-        
       </div>
     </div>
   );

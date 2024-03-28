@@ -1,7 +1,7 @@
 .navbar{
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 10px 100px;
     box-shadow: 0 1px 3px -2px black;
     height: 90px;
 }
@@ -82,8 +82,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
-    margin-left: -55px;
     border-radius: 11px;
     font-size: 14px;
     background: red;
@@ -91,7 +89,20 @@
 }
 
 
+.links{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(67, 42, 117);
+    border: none;
+   
+}
+.links-holder{
+    margin-left: 20px;
+    display: flex;
 
+    gap: 25px;
+}
 
 .cart{
     width: 42px;
@@ -104,7 +115,7 @@ button{
 select{
     border: none;
     font-size: 18px;
-    font-weight: 600;
-    color: rgb(67, 42, 117);
-    width: 120px;
+    /* font-weight: 600; */
+   
+    width: 130px;
 } 

@@ -1,0 +1,97 @@
+/* Style for the table */
+
+.cart-main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  /* Style for table header */
+  th {
+    background-color: #ffffff;
+    /* border: 1px solid #ddd; */
+    padding: 30px;
+    color: rgb(65, 86, 169);
+    
+  }
+  
+  /* Style for table cells */
+  td {
+    /* border: 1px solid #ddd; */
+    padding:20px 0px;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.737);
+  }
+  
+  /* Style for alternate rows */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style for each row */
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style for images within the table */
+  td img {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  .remove-btn:hover{
+    cursor: pointer;
+  }
+  .cartHead{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.164);
+    display: flex;
+    gap: 20px;
+    padding:0px 150px ;
+    color: gray;
+
+  }
+  .cartHead div{
+    width: 4px;
+    background-color: rgba(0, 0, 0, 0.114);
+    margin: 4px -5px; 
+ 
+   }
+
+   /* ---------------------------------- */
+   .cartitems-down{
+    width: 60%;
+    margin-top: 50px;
+    box-shadow: 1px 1px 10px rgb(209, 209, 209);
+    padding: 20px 100px;
+    border-radius: 5px;
+   }
+
+
+.cartitems-total-item{
+
+   
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+   
+}
+#buy-btn{
+    width: 382px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: orange;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
