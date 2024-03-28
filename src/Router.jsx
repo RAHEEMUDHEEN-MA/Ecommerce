@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Category from './pages/Category';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
+import Users from './pages/Users';
 
 
 const Router = () => {
@@ -20,6 +21,7 @@ hi
             <Route  path="/category/:cat_id" element={<><Category/></>} />
             <Route  path="/product/:product_id" element={<><Product/></>} />
             <Route  path="/cart" element={<><Cart/></>} />
+            <Route  path="/users" element={<><Users/></>} />
             {/* <Route  path="/" element={<><Home/> </>} />
             <Route  path="/" element={<><Home/> </>} />
             <Route  path="/" element={<><Home/> </>} />

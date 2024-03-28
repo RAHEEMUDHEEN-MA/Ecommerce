@@ -1,0 +1,22 @@
+.maintile{
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    box-shadow: 1px 1px 10px rgb(211, 211, 211);
+    /* border: 1px solid; */
+    margin: 10px;
+    width: 300px;
+}
+.img-holder{
+    /* border-radius: 100%; */
+    overflow: hidden;
+}
+.data-holder{
+    /* border-radius: 100%; */
+    text-align: left;
+    overflow: hidden;
+}
+.img-holder img{
+    border-radius: 100%;
+    overflow: hidden;
+}
