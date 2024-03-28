@@ -6,7 +6,7 @@ import  "../assests/styles/Home.css";
 const Home = () => {
   const [products, setproducts] = useState([]);
   const navigate=useNavigate()
-  // console.log(products);
+  console.log(products);
   useEffect(() => {
     axios
       .get("https://api.escuelajs.co/api/v1/products")
