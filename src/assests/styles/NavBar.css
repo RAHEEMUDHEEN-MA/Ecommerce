@@ -1,14 +1,26 @@
 .navbar{
     display: flex;
     justify-content: space-around;
-    padding: 16px;
+    padding: 10px;
     box-shadow: 0 1px 3px -2px black;
+    height: 90px;
 }
 .nav-logo{
     display: flex;
     align-items: center;
     gap: 10px;
 }
+@keyframes jump {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-25); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .nav-logo img  {
+    animation: jump 01s ease 2;
+  }
+
 .nav-logo-link {
     display: flex;
     align-items: center;
@@ -77,23 +89,10 @@
     background: red;
     color: white;
 }
-.dark_btn{
-    width: 50px;
-    height: 50px;
-}
-.dark{
-    background: linear-gradient(180deg, black, #e1ffea22 90%);
-}
-.pnav_dark{
-    color: #171717;
-    font-size: 38px;
-    font-weight: 600;
-}
-.pnav_light{
-    color: white;
-    font-size: 38px;
-    font-weight: 600;
-}
+
+
+
+
 .cart{
     width: 42px;
     height: 42px;
@@ -102,43 +101,10 @@ button{
     border: none;
 }
 
-.toggle_dark{
-  background-color:orange;
-  color: white;
-}
-.toggle_light{
-    background-color: #515151;
-    color: white;
-}
-.change{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-.toggle_dark {
-    background-color: rgb(232, 212, 177);
-    color: white;
-}
-
-.toggle_light {
-    background-color: #515151;
-    color: white;
-}
-
-.change {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+select{
     border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.change img {
-    width: 80%;
-    height: auto;
-}
-
-
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(67, 42, 117);
+    width: 120px;
+} 

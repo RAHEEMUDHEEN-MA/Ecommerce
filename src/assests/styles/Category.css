@@ -1,0 +1,9 @@
+.productGrid {
+    padding:10px 100px;
+  margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Adjust column width as needed */
+    grid-gap: 20px; /* Adjust the gap between tiles */
+    justify-items: center; /* Center tiles horizontally */
+  }
+  

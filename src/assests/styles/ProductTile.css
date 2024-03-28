@@ -1,0 +1,89 @@
+.product-tile * {
+  padding: 0;
+  margin: 0;
+}
+.product-tile {
+  height: 340px;
+  width: 250px;
+  box-shadow: 1px 1px 20px rgba(77, 75, 75, 0.315);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+.product-tile img {
+  height: 60%;
+  width: 250px;
+}
+#product_title {
+  height: 13%;
+  width: 250px;
+  padding: 5px;
+  /* background-color: blue; */
+}
+#product_price {
+  font-size: 20px;
+  color: gray;
+  font-weight: 600;
+  height: 10%;
+  width: 250px;
+  /* background-color: rgb(0, 255, 110); */
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.btn-div button {
+  background-color: rgb(236, 154, 0);
+  color: white;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-div button:hover {
+  cursor: pointer;
+}
+
+.btn-div {
+  display: none;
+  animation: slideUp 0.5s ease forwards;
+}
+
+.btn-div.show {
+  display: block;
+  animation: slideUp 0.5s ease forwards;
+}
+
+.product-tile:hover .btn-div {
+  display: flex;
+  justify-content: center;
+}
+.product-tile img {
+  transition: transform 0.3s ease;
+}
+.product-tile img :hover {
+  cursor: pointer;
+}
+
+.product-tile:hover img {
+  transform: scale(1.1);
+}

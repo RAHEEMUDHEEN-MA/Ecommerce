@@ -1,0 +1,146 @@
+.home-main-container {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+ gap: 10px;
+  padding: 10px 100px;
+}
+
+.home-left-container {
+    display: flex;
+    background-size: cover;
+    border-radius: 5px;
+    width: 70%;
+    animation: changeBackground 13s infinite; /* Set the animation to change every 4 seconds */
+}
+
+@keyframes changeBackground {
+    0% { background-image: url("https://i.imgur.com/ItHcq7o.jpeg"); }
+    25% { background-image: url("https://i.imgur.com/55GM3XZ.jpeg"); }
+    50% { background-image: url("https://i.imgur.com/ItHcq7o.jpeg"); }
+    75% { background-image: url("https://i.imgur.com/tcNJxoW.jpeg"); }
+    100% { background-image: url("https://i.imgur.com/ItHcq7o.jpeg"); }
+}
+
+.home-left-container div{
+    margin: 100px;
+}
+ .new {
+   font-size: 15px;
+   background-color: rgba(255, 255, 255, 0.452);
+   border-radius: 10px;
+   padding: 5px;
+   font-weight: 600;
+}
+.name{
+    text-align: left;
+    font-size: 50px;
+    color: rgb(234, 232, 232);
+    font-weight: 600;
+}
+.shop-btn{
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid orange;
+    padding: 10px;
+}
+.shop-btn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.215);
+    border-radius: 20px;
+}
+.home-right-container {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  gap: 10px;
+
+  border-radius: 5px;
+}
+
+.right-top-conatiner {
+    padding: 30px;
+  display: flex;
+  background: url("https://i.imgur.com/hKcMNJs.jpeg");
+  /* background: url("https://i.imgur.com/BG8J0Fj.jpeg"); */
+
+    height: 50%;
+  background-size: cover;
+  border-radius: 5px;
+ 
+}
+.home-right-container  .new{
+    
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 600;
+  }
+.home-right-container  .name{
+    
+    text-align: left;
+    font-size: 20px;
+    color: rgba(255, 236, 220, 0.848);
+    font-weight: 600;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.386);
+
+  }
+.right-bottom-conatiner {
+    padding: 30px;
+  display: flex;
+  height: 50%;
+  background: url("https://i.imgur.com/3dU0m72.jpeg");
+  background-size: cover;
+  border-radius: 5px;
+  
+}
+.right-bottom-conatiner .name{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.386);
+
+}
+.right-top-conatiner .shop-btn{
+   margin-top: 25px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    color: rgb(10, 13, 45);
+}
+
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.right-bottom-conatiner .shop-btn {
+    
+    animation: shake 3s ease-in-out infinite;
+    animation-delay: 2s; 
+}
+
+.loader{
+    height: 70vh;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes pulse {
+    0% { font-size: 20px; opacity: 0.6; }
+    50% { font-size: 26px; opacity: 1; }
+    100% { font-size: 20px; opacity: 0.7; }
+}
+
+.loader p {
+    font-size: 20px;
+    opacity: 1;
+    animation: pulse 0.6s ease-in-out infinite;
+}

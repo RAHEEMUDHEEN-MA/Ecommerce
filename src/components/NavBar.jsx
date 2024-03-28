@@ -8,7 +8,7 @@ import {} from "../assests/styles/NavBar.css";
 
 const NavBar = () => {
   const [categories, setcategories] = useState([]);
-  console.log(categories);
+  // console.log(categories);
 
   useEffect(() => {
     axios
@@ -45,10 +45,10 @@ const NavBar = () => {
       <ul className="nav-menu">
         <Link to="/">Home</Link>
         <select defaultValue="" onChange={handleChange}>
-        <option disabled>Category</option>
+        <option >Category</option>
 
          {categories.map((item)=>(
-            <option value={item.id}>{item.name}</option>
+            <option key={item.id} value={item.id}>{item.name}</option>
          ))}
          
         </select>
@@ -58,8 +58,8 @@ const NavBar = () => {
         <Link to="/cart">
           <img src={cart} alt="" className="cart" />
         </Link>
-        <div className="nav-cart-count"></div>
-        <div className="dark_btn"></div>
+        
+        
       </div>
     </div>
   );
