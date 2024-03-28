@@ -88,3 +88,14 @@
 .product-tile:hover img {
   transform: scale(1.1);
 }
+
+
+
+@media only screen and (max-width:640px){
+   
+  .btn-div {
+    display: flex;
+    justify-content: center;
+  }
+  
+}

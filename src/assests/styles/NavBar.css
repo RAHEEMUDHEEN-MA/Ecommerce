@@ -119,3 +119,26 @@ select{
    
     width: 130px;
 } 
+
+@media only screen and (max-width:640px){
+   
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+        box-shadow: 0 1px 3px -2px black;
+        height: 70px;
+    }
+    #userss{
+        display: none;
+    }
+    #homebtn{
+        display: none;
+    }
+   
+    #catgorylist{
+        display: block;
+        position: relative;
+        top: 10px;
+    }
+}

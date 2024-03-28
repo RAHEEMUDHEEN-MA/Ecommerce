@@ -45,10 +45,10 @@ const NavBar = () => {
           <p>ShoPY</p>
         </Link>
         <div className="links-holder">
-          <Link className="links" to="/">
+          <Link className="links" id="homebtn" to="/">
             Home
           </Link>
-          <select className="links" defaultValue="" onChange={handleChange}>
+          <select id="catgorylist" className="links" defaultValue="" onChange={handleChange}>
             <option>Category</option>
 
             {categories.map((item) => (
@@ -57,7 +57,7 @@ const NavBar = () => {
               </option>
             ))}
           </select>
-          <Link className="links" to="/users">
+          <Link className="links" id="userss" to="/users">
             Users
           </Link>
         </div>
