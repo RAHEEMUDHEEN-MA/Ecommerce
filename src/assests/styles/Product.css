@@ -43,7 +43,7 @@
 .min_img{
     display: flex;
     gap: 10px;
-    opacity: 0.6; /* Adjust the value as needed */
+    opacity: 0.6; 
    margin-bottom: 40px;
 }
 .min_img img{
